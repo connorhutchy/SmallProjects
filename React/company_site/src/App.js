@@ -16,6 +16,9 @@ function App() {
       <div className="App-Body">
         <Main/> 
      </div>
+     <div className="Footer">
+      <b className="FooterBody">Footer</b> <b className="Credits">by <a className="link" href="https://github.com/connorhutchy" >Connor Hutchinson</a><br/>Created 2020</b>
+     </div>
     </div>
   );
 }

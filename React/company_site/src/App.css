@@ -9,7 +9,7 @@
 
 .App-Body {
   background-color:#F7FFF7;
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,6 @@
 
 .nav {
   background-color:#294C60;
-  min-height:10vh;
   padding-top:10px;
   position: -webkit-sticky;
   position: sticky;
@@ -62,5 +61,25 @@
   padding-top:10px;
 }
 .nav-link:hover {
+  color:#FFE66D;
+}
+.nav-item {
+  padding-bottom:0px;
+}
+
+.Footer {
+  min-height: 50px;
+  background-color:#294C60;
+  color: #F7FFF7;
+  
+}
+.Credits {
+  font-size: 10px;
+  color:#FFE66D;
+  float: right;
+  padding-right: 10px;
+  text-align: right;
+}
+.link:link, .link:visited {
   color:#FFE66D;
 }

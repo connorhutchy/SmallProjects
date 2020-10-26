@@ -4,22 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Header extends Component {
     render() {
+        console.log(window.location.href)
         return (
-            <div>
-
-            <Nav className="justify-content-center">
+            <Nav justify className="justify-content-center" variant="tabs" activeKey={window.location.href}>
             <Nav.Item>
-                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link eventKey="http://localhost:3000/" href="/">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="/About">About</Nav.Link>
+                <Nav.Link eventKey= "http://localhost:3000/About" href="/About">About</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="Contact">Contact</Nav.Link>
+                <Nav.Link eventKey="http://localhost:3000/Contact" href="/Contact">Contact</Nav.Link>
             </Nav.Item>
             </Nav>
-
-            </div>
         )
     }
 }
