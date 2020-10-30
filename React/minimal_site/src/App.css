@@ -1,0 +1,71 @@
+:root {
+
+  --primary: #212529;
+  --secondary: #ECF0F1;
+  --highlight: #6F1A07;
+  --green: #7C7F65;
+  --transparent: #cccccc00;
+}
+
+body{
+  
+  background-color: #294C60 !important;
+  min-height: 200vh;
+  z-index: 0;
+}
+
+.Foreground {
+  z-index: 1;
+}
+
+.Background {
+
+  background-image: url('./melb.jpg');
+
+}
+
+.App {
+  background-image: url('./melb.jpg') !important;
+  text-align: center;
+  min-height: 100vh;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  position: relative;
+  
+}
+
+#logo {
+  border-radius: 20%;
+}
+
+.body {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  margin-top: -25%;
+}
+
+#lhs {
+
+  position: relative;
+  background-image: linear-gradient(to right,var(--primary), 80%,rgba(0, 0, 0, 0.5));
+  min-width: 40vw;
+  min-height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  color:var(--highlight);
+  
+}
+
+#rhs {
+  position: relative;
+  float:right;
+  min-width: 60vw;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:var(--secondary);
+}
+

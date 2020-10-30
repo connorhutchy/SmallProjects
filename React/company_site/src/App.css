@@ -1,14 +1,29 @@
+
+:root{
+
+  --primary:#B33F62;
+  --secondary:#FFFFFF;
+  --complimentary:#360568;
+  --spare: #F39237;
+  --border: #20A39E;
+
+}
+
+#Logo {
+  max-width: 60vw;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 60vmin;
   pointer-events: none;
 }
 
 .App-Body {
-  background-color:#F7FFF7;
+  background-color:var(--secondary);
   min-height: 150vh;
   display: flex;
   flex-direction: column;
@@ -20,10 +35,10 @@
 
 .Company_name {
 
-  background-color: #294C60;
+  background-color: var(--primary);
   padding-top: 50px;
   min-height: 20vh;
-  color: #FFE66D;
+  color: var(--complimentary);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   align-items: center;
   justify-content: center;
@@ -36,7 +51,7 @@
 }
 
 .App-link {
-  color:#FFE66D;
+  color:var(--spare);
 }
 
 .Header {
@@ -47,7 +62,7 @@
 }
 
 .nav {
-  background-color:#294C60;
+  background-color:var(--primary);
   padding-top:10px;
   position: -webkit-sticky;
   position: sticky;
@@ -56,30 +71,42 @@
 }
 
 .nav-link {
-  color:#F7FFF7;
+  color:var(--secondary);
   font-size: 20px;
   padding-top:10px;
+  
 }
-.nav-link:hover {
-  color:#FFE66D;
+
+#active {
+  background-color: var(--secondary);
+  border-top-left-radius: 50px !important;
+  border-top-right-radius: 50px !important;
 }
+
+#inactive:hover {
+  color:var(--spare);
+  border-color: var(--primary);
+  border-top-left-radius: 50px !important;
+  border-top-right-radius: 50px !important;
+}
+
 .nav-item {
   padding-bottom:0px;
 }
 
 .Footer {
   min-height: 50px;
-  background-color:#294C60;
-  color: #F7FFF7;
+  background-color:var(--primary);
+  color: var(--secondary);
   
 }
 .Credits {
   font-size: 10px;
-  color:#FFE66D;
+  color:var(--spare);
   float: right;
   padding-right: 10px;
   text-align: right;
 }
 .link:link, .link:visited {
-  color:#FFE66D;
+  color:var(--secondary);
 }

@@ -1,4 +1,5 @@
 import Header from './components/custom_header.jsx';
+import logo from './placeholderLogo.png'
 import './App.css';
 
 import Main from './components/Main'
@@ -9,7 +10,7 @@ function App() {
     
     <div className="App">
 
-    <div className="Company_name"> <h1>Company Name </h1> <br/> subheading </div>
+    <div className="Company_name"> <img id="Logo" src={logo} alt="logo"></img> </div>
     <div className="Header">
     <Header className="Header"/>
     </div>

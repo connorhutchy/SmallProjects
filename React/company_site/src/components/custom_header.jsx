@@ -8,13 +8,13 @@ class Header extends Component {
         return (
             <Nav justify className="justify-content-center" variant="tabs" activeKey={window.location.href}>
             <Nav.Item>
-                <Nav.Link eventKey="http://localhost:3000/" href="/">Home</Nav.Link>
+                <Nav.Link id={window.location.href==="http://localhost:3000/" ? "active":"inactive"} eventKey="http://localhost:3000/" href="/">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey= "http://localhost:3000/About" href="/About">About</Nav.Link>
+                <Nav.Link id={window.location.href==="http://localhost:3000/About" ? "active":"inactive"} eventKey= "http://localhost:3000/About" href="/About">About</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link eventKey="http://localhost:3000/Contact" href="/Contact">Contact</Nav.Link>
+                <Nav.Link id={window.location.href==="http://localhost:3000/Contact" ? "active":"inactive"} eventKey="http://localhost:3000/Contact" href="/Contact">Contact</Nav.Link>
             </Nav.Item>
             </Nav>
         )
