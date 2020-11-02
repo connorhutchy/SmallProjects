@@ -8,64 +8,61 @@
 }
 
 body{
-  
+
   background-color: #294C60 !important;
-  min-height: 200vh;
-  z-index: 0;
-}
-
-.Foreground {
-  z-index: 1;
-}
-
-.Background {
-
-  background-image: url('./melb.jpg');
 
 }
+
 
 .App {
-  background-image: url('./melb.jpg') !important;
-  text-align: center;
-  min-height: 100vh;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  position: relative;
+  background-image: 
+    linear-gradient(to right, var(--primary) 33%, var(--transparent)),
+    url('./melb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   
-}
-
-#logo {
-  border-radius: 20%;
-}
-
-.body {
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%);
-  margin-top: -25%;
-}
-
-#lhs {
-
-  position: relative;
-  background-image: linear-gradient(to right,var(--primary), 80%,rgba(0, 0, 0, 0.5));
-  min-width: 40vw;
-  min-height: 100%;
+  
+  min-height: 150vh;
   display: inline-block;
   vertical-align: middle;
-  color:var(--highlight);
+
+  font-size: calc(10px + 2vmin);
+
+  z-index: 0;
   
 }
 
-#rhs {
-  position: relative;
-  float:right;
-  min-width: 60vw;
-  min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color:var(--secondary);
+.Logo {
+
+  border-radius: 20%;
+  max-height: 50vh;
+  z-index: 3;
+  float: left;
+  margin: 5%;
+  position: sticky;
+  top:5%;
 }
 
+.ScrolledLogo {
+
+  border-radius: 20%;
+  max-height: 20vh;
+  z-index: 3;
+  float: left;
+  margin: 5%;
+  position: sticky;
+  top:5%;
+
+}
+
+
+.TextBody {
+
+  float: right;
+  margin: 5%;
+  color: var(--secondary);
+  min-height: max-content;
+  text-align: center;
+  vertical-align: middle;
+
+}

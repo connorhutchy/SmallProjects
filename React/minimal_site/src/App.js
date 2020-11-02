@@ -1,27 +1,46 @@
 import './App.css';
 import logo from './Hutchinson software.png'
 
-function App() {
-  return (
 
-    <div className="App">
+import React, { Component } from 'react'
+
+export default class App extends Component {
+  
+  constructor(){
+    super();
+
+
+    this.changeLogo = this.changeLogo.bind(this);
+
+  }
 
   
-        <span id="lhs">
-          <span className="body">
-            <img id="logo" src={logo} alt="logo"></img>
-          </span>
-        </span>
 
-        <span id="rhs">
-          <span className="body">
-            <h1>test</h1>
-          </span>
-        </span>
+  changeLogo(){
+
+    if(document.body.scrollTop > 25) {
+  
+      document.getElementById("logo").className = "ScrolledLogo";
+  
+    }
+    else {
+      document.getElementById("logo").className = "Logo";
+    }
+  }
+  
+  render() {
+    return (
+      <div className="App">
+
+
+            <img id="logo" className="Logo" onScroll={this.changeLogo} src={logo} alt="logo"></img>
+
+            <span className="TextBody" > <h1> Welcome </h1> </span>
+           
+
       </div>
-
-  
-  );
+    )
+  }
 }
 
-export default App;
+
